@@ -118,11 +118,37 @@
 //     }
 // }
 
-//next goal
 // 236A
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     string str,dstr;
+//     cin >> str;
+//     dstr = str[0];
+//     int count = 1;
+//     for(int i = 1; i < str.size(); i++){
+//         int flag = 0;
+//         for(int j = 0; j < dstr.size(); j++){
+//             if(dstr[j] == str[i]){
+//                 flag = 1;
+//             }
+//         }
+//         if(flag != 1){
+//             count += 1;
+//             dstr += str[i];
+//         }
+//     }
+//     if(count % 2 == 0){
+//         cout << "CHAT WITH HER!";
+//     }else{
+//         cout << "IGNORE HIM!";  
+//     }
+// }
+
 //50A
 // 617A
-// 59A
+// 59A 
 // 467A
 // 112A
 // 266A
