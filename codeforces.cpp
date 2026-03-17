@@ -147,7 +147,49 @@
 // }
 
 //50A
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int M,N;
+//     cin >> M >> N;
+//     cout << (M*N) / 2;;
+// }
+
 // 617A
+#include<iostream>
+using namespace std;
+
+int main(){
+    int x,steps,remaining;
+    cin >> x;
+    if(x % 5 != 0){
+        steps = x / 5;
+        remaining = x % 5;
+        if(remaining % 4 != 0){
+            steps = steps + ( remaining / 4);
+            remaining = remaining % 4;
+            if(remaining % 3 != 0){
+                steps = steps + (remaining / 3);
+                remaining = remaining % 3;
+                if(remaining % 2 != 0){
+                    steps = steps + (remaining / 2);
+                    remaining = remaining % 2;
+                    cout << steps + remaining;
+                }else{
+                    cout << steps + (remaining / 2);
+                }
+            }else{
+                cout << steps + (remaining / 3);
+            }
+        }else{
+            cout << steps + (remaining / 4);
+        }
+    }else{
+        cout << x/5;
+    }
+}
+
 // 59A 
 // 467A
 // 112A
